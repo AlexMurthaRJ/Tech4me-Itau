@@ -26,47 +26,110 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
-        img{
-            max-width: 200px;
+
+        img {
+            max-width: 220px;
         }
+
+        nav {
+            background: #000;
+            font-size: 15px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            color: #fff;
+            border-right: 1px solid #fff;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .fakebotao {
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+        }
+
+        .fakebotao:hover {
+            background-color: rgb(52, 52, 52);
+        }
+        footer{
+            background: #000000;
+    height: 90px;
+        }
+        
     </style>
 
 </head>
 
-<body>
+<body style="background-color:rgb(255, 255, 255) ;">
     <div id="container">
-        <div style="height:100px; background-color:black;width: 100%;">
-
+        <div style="height:50px ; margin-top:50px" >
+            <h1 style="color:rgb(0, 0, 0); text-align:center;"> Tech4me Doces</h1>
         </div>
         <nav>
             <ul>
-                <li>Biscoitos</li>
-                <li>Doces</li>
-                <li>Salgados</li>
+                <li><a href="#">Biscoitos</a></li>
+                <li><a href="#">Doces</a></li>
+                <li><a href="#">Salgados</a></li>
             </ul>
         </nav>
         <main>
-            <header>Produtos</header>
-            
+            <header>
+                <h2>Biscoitos</h2>
+            </header>
+
             <section id="produtos">
-              <section class="produto">
-                <img src="https://hiperideal.vteximg.com.br/arquivos/ids/186329-1000-1000/2079348.jpg">
-                <p>Biscoito Recheado piraquê Chocolate 160g</p>
-                <p>R$ 5,98</p>
-              </section>
-              <section class="produto">
-                <img src="https://hiperideal.vteximg.com.br/arquivos/ids/201756-1000-1000/2140764.jpg">
-                <p>Bauducco Chocolate Branco E Confeito 100g</p>
-                <p>R$ 6,99</p>
-              </section>
-              <section class="produto">
-                <img src="https://hiperideal.vteximg.com.br/arquivos/ids/175523-1000-1000/204521.jpg">
-                <p>Biscoito Chocobiscuit Bauducco Ao Leite 80g</p>
-                <p>R$ 4,19l</p>
-              </section>
-             
-            
-          </main>
+                <section class="produto">
+                    <img src="https://hiperideal.vteximg.com.br/arquivos/ids/186329-1000-1000/2079348.jpg">
+                    <p>Biscoito Recheado piraquê Chocolate 160g</p>
+                    <p class="fakebotao">R$ 5,98</p>
+                </section>
+                <section class="produto">
+                    <img src="https://hiperideal.vteximg.com.br/arquivos/ids/201756-1000-1000/2140764.jpg">
+                    <p>Bauducco Chocolate Branco E Confeito 100g</p>
+                    <p class="fakebotao">R$ 6,99</p>
+                </section>
+                <section class="produto">
+                    <img src="https://hiperideal.vteximg.com.br/arquivos/ids/175523-1000-1000/204521.jpg">
+                    <p>Biscoito Chocobiscuit Bauducco Ao Leite 80g</p>
+                    <p class="fakebotao">R$ 4,19</p>
+                </section>
+        </main>
+        <main>
+            <header>
+                <h2>Balas</h2>
+            </header>
+
+            <section id="produtos">
+                <section class="produto">
+                    <img src="https://farmaciaindiana.vteximg.com.br/arquivos/ids/205173-536-536/7895800169193_0.jpg">
+                    <p>Bala Halls Extra Forte Preto 35g</p>
+                    <p class="fakebotao">R$ 2,19</p>
+                </section>
+                <section class="produto">
+                    <img src="https://farmaciaindiana.vteximg.com.br/arquivos/ids/214049/78938854.jpg">
+                    <p>Bala Halls Melancia 28g</p>
+                    <p class="fakebotao">R$ 2,19</p>
+                </section>
+                <section class="produto">
+                    <img src="https://farmaciaindiana.vteximg.com.br/arquivos/ids/214050/78938830.jpg">
+                    <p>Bala Halls Menta 28g</p>
+                    <p class="fakebotao">R$ 2,19</p>
+                </section>
+        </main>
+        <footer>
+
+        </footer>
     </div>
 
 
