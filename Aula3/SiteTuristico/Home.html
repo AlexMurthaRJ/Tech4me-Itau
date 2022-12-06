@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TereView</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.15/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.15/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.15/dist/js/uikit-icons.min.js"></script>
+
+    <style>
+        .flex-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-box {
+            background-color: rgb(0, 0, 0);
+            height: 80px;
+        }
+
+        .content-box {
+            background-color: black;
+            color: white;
+            width: 1200px;
+        }
+
+        .flex-box2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-box2 {
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .content-box2 {
+            background-color: rgb(255, 255, 255);
+            color: white;
+            width: 1200px;
+        }
+
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 5vw);
+            gap: 0.5rem;
+        }
+
+        .imgGaleria {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .itemGaleria {
+            overflow: hidden;
+        }
+
+        .item01 {
+            grid-column: 1 / span 5;
+            grid-row: 1 /span 8;
+        }
+
+        .item02 {
+            grid-column: 6 / span 8;
+            grid-row: 1 /span 4;
+            margin-top: 0;
+        }
+
+        .item03 {
+            grid-column: 6 / span 8;
+            grid-row: 5 /span 4;
+        }
+
+        #texto {
+            transition: .2s;
+            position: absolute;
+            margin-top: -50px;
+            background-color: black;
+            margin-left: 30px;
+            padding: 8px 20px;
+            border-radius: 15px;
+        }
+        #texto:hover {
+            color: rgb(206, 206, 206);
+            padding: 8px 25px;
+        }
+        a {
+            color: white;
+        }
+        a:hover {
+            color: rgb(206, 206, 206);
+        }
+        h3{
+            margin: 10px 20px;
+        }
+      
+    </style>
+
+</head>
+
+<body>
+
+    <body>
+        <div class="flex-box container-box">
+            <div class="content-box">
+                <div class="uk-position-relative" style="background-color: black; height: 80px;">
+                    <img src="https://www.tech4me.com.br/img/icone_tech4me_branco.png" width="60px" height="80px" alt=""
+                        style="margin-top:15px; margin-left:60px">
+                    <div class="uk-position-top">
+                        <nav class="uk-navbar-container uk-navbar-transparent " uk-navbar>
+                            <div class="uk-navbar-right" style="padding-right:60px ;">
+                                <ul class="uk-navbar-nav">
+                                    <li><a href="Home.html">Home</a></li>
+                                    <li><a href="">Contato</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="flex-box2 container-box2">
+            <div class="content-box2">
+                <h3>Top 3 pontos turísticos em Teresópolis</h3>
+                <main class="principal">
+                    <section class="galeria">
+
+                        <figure class="itemGaleria item01">
+                            <a href="frades.html"> <img src="https://fuja.com.br/wp-content/uploads/2022/03/frades01.jpg"
+                                    alt="Imagem 01" class="imgGaleria">
+                                <div id="texto">Cachoeira dos Frades</div>
+                            </a>
+                        </figure>
+                        <figure class="itemGaleria item02">
+                            <a href="dedodedeus.html"><img src="https://live.staticflickr.com/7413/12746825585_bee314723b_b.jpg"
+                                    alt="Imagem 02" class="imgGaleria">
+                                <div id="texto">Dedo de Deus</div>
+                            </a>
+                        </figure>
+                        <figure class="itemGaleria item03">
+                            <a href="mulherdepedra.html"><img src="https://i.pinimg.com/originals/6e/d7/a9/6ed7a96acc28d06ce5d581c47fd0f25c.jpg"
+                                    alt="Imagem 03" class="imgGaleria">
+                                <div id="texto">Mulher de Pedra</div>
+                            </a>
+                        </figure>
+
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        
+
+
+
+
+    </body>
+
+</html>
