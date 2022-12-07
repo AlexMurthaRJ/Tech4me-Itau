@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech4me Doces</title>
+
+    <style>
+        #div1 {
+            display: flex;
+        }
+
+        #container {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        #produtos {
+            display: flex;  
+            justify-content: space-around;
+            border: 1px solid #000;
+            border-radius: 20px;
+            margin: auto;
+            box-shadow: 1px 1px 10px black;
+            width: 1024px;
+        }
+
+        nav {
+            background: #000;
+            font-size: 15px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            color: #fff;
+            border-right: 1px solid #fff;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+            color: #fff;
+            padding: 10px;
+        }
+
+        input{
+            border-radius: 15px;
+            width: 400px;
+            height: 20px;
+        }
+
+        textarea{
+            border-radius: 15px;
+            width:760px ;
+            height: 90px;
+        }
+        #submit1{
+            border-color: aqua;
+            background-color: #000;
+            color: aqua;
+            width: 130px;
+            height: 30px;
+        }
+     
+    </style>
+
+</head>
+
+<body style="background-color:rgb(255, 255, 255) ;">
+    <div id="container">
+        <div style="height:50px ; margin-top:50px">
+            <h1 style="color:rgb(0, 0, 0); text-align:center;"> Tech4me Doces </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Biscoitos</a></li>
+                <li><a href="#">Doces</a></li>
+                <li><a href="#">Salgados</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="produtos">
+        <section style="width:800px;">
+            <h1 style="text-align: center;">Pesquisa de Satifação</h1>
+            <hr>
+            <form action="" >
+                <div style="margin:20px ;">
+                    Nome: <br> <input type="text" name="nome"> <br><br>
+                Email: <br> <input type="email" name="email"> <br><br>
+                Qual seu nível de satisfação com nossos produtos? <br>  <input type="range" name="satisfacao" min="0" max="10"> <br><br>
+                Conte-me mais sobre qual doce lembrou mais a sua infância: <br><textarea name="mensagem"></textarea>
+                </div>
+
+                <input type="submit" style="margin:5px 20px ;" id="submit1">
+                <hr>
+            </form>
+        </section>
+    </section>
+
+
+
+
+</body>
+
+</html>
