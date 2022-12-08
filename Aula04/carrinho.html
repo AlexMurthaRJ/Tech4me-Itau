@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho | Casas Perdidas</title>
+
+<style>
+.flex-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-box {
+            background-color: rgb(247, 247, 247);
+            height: 90px;
+           
+        }
+
+        .content-box {
+            background-color:rgb(247, 247, 247);
+            color: rgb(0, 0, 0);
+            width: 1200px;
+            
+        }
+
+        .flex-box2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-box2 {
+            background-color: rgb(255, 255, 255);
+            
+           
+        }
+
+        .content-box2 {
+            background-color:rgb(247, 247, 247);
+            color: rgb(0, 0, 0);
+            width: 1200px;
+            
+        }
+
+        #div1{
+            display: flex;
+        }
+
+       #div2{
+        display: flex;
+        align-items: center;
+            justify-content: center;
+       }
+#div3{
+    display: flex;
+    align-items: left;
+            justify-content: left;
+            padding-left: 50px;
+}
+
+       .alinha{
+        margin-left: 5px;
+        margin-top: 15px;
+        width: 250px;
+        text-align: center;
+        color: blue;
+        text-decoration: underline;
+        font-weight: bold;
+       }
+       #input1{
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        border-color: rgb(241, 241, 241);
+        border: 1px;
+        
+       }
+       #button1{
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        border-color: none;
+        border: 1px;
+       }
+       #button1:hover{
+        background-color: rgb(16, 31, 83);
+       }
+
+       #button2{
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgb(87, 207, 72);
+        color: white;
+        font-weight: bold;
+        border-color: none;
+        border: 1px;
+        margin-left: -30px;
+       }
+
+       #button2:hover{
+        background-color: rgb(77, 184, 63);
+       }
+       form{
+       outline: unset;
+       }
+       input{
+        width: 200px;
+        border: unset;
+        border-radius: 10px;
+        height: 20px;
+        margin: 5px ;
+       }
+</style>
+
+</head>
+<body>
+    <div  style="background-color:red ;height:40px; width: 100%;">
+    </div>
+    <div  style="background-color:blue ;height:10px; width: 100%;">
+    </div>
+
+    <div class="flex-box container-box">
+        <div class="content-box">
+            <div id="div1">
+                <div style="width: 700px;"><font size="30" style="color:red;font-weight: bold;">Casas</font><font size="30" style="color: blue;">Perdidas</font></div>
+                <div class="alinha">Central de atendimento</div>
+                <div class="alinha">Meus Pedidos</div>
+                <div class="alinha">Ambiente 100% seguro</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-box2 container-box2">
+        <div class="content-box2">
+            <div>
+                <h2 style="color:blue ; margin-left: 50px;">Meu carrinho</h3>
+                    <hr>
+                <div id="div2">
+                    <div style="width:150px ;"><img src="https://imgs.casasbahia.com.br/55030167/1g.jpg?imwidth=130" alt=""></div>
+                    <div style="width:650px ; ">Tela 55" UHD 4K QLED Toshiba 55TB001 com Processador Quad-Core, Espelhamento de Tela, Alexa e HDR10 <br> <font size="2">Vendido e entregue por <font style="color:blue; font-weight: bold;">CasasPerdidas</font></font>  </div>
+                    <div style="width: 150px;"> Quantidade: <br>
+                    <input type="number" min="1" max="5">
+                    </div>
+                    <div style="width: 150px;">R$ 3.299,00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-box2 container-box2">
+        <div class="content-box2">
+            <div id="div3">
+                <div style="width: 650px; border:1px solid rgb(44, 92, 252);background-color: rgb(211, 233, 248); " id="div2">
+                    <div style="width:250px ;"><p> <font style="color:blue ; font-weight:bold">Calcule o frete e prazo de entrega</font> <br>
+                        <font size="2" style="color: rgb(107, 106, 106);">estimados por sua região</font></p></div>
+                    <div style="width:80px ;"><input type="text" placeholder="00000-000" id="input1"></div>
+                    <div style="padding-left:70px ;"><button id="button1">Calcular</button></div>
+                    <div style="padding-left:20px ;"><a href="">Não sei meu cep</a></div>
+                </div>
+
+                <div style="margin-left:50px ;">
+                    <hr>
+                    <span>01 Produto <font style="margin-left:200px; color:blue;font-weight:bold"> R$ 3.299,00</font></span>
+                    <hr>
+                    <p>Total <font style="margin-left:240px; color:blue;font-weight:bold"> R$ 3.299,00</font></p>
+                    <div id="div1">
+                        <div style="width:250px ;"><p style="font-weight:bold; color:blue; padding-left:10px">Compras mais produtos</p></div>
+                        <div><button id="button2">Continuar a compra</button></div>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-box2 container-box2">
+        <div class="content-box2">
+            <hr>
+            <div style="margin-left:50px">
+                
+                <h2>Dados de Entrega</h2>
+            <p>Nenhum local de entraga encontrado gentileza cadastrar nova localidade.</p>
+            <div style="width: 650px; border:1px solid rgb(44, 92, 252);background-color: rgb(211, 233, 248); " id="div2">
+                <form action="">
+                    <label for="">CEP</label> <input type="number" name="cep" placeholder="00000-000"><br>
+                    <label for="">Estado</label> <select name="estado" id="">
+                        <option value="Rio de Janeiro">RJ</option>
+                        <option value="Minas Gerais">MG</option>
+                        <option value="São Paulo">SP</option>
+                    </select>
+                    <label for="">Cidade</label> <input type="text" name="cidade"><br>
+                    <label for="">Endereço</label> <input type="text" name="endereco"> <label for="">N°</label> <input type="number" name="numero"><br>
+                    <label for="">Complemento</label> <input type="text" style="width:410px ;" name="complemento"><br>
+                    <label for="">Casa</label> <input type="radio" name="caortrab" style="width:15px ;"> <label for="">Trabalho</label> <input type="radio" name="caortrab" style="width:15px ;"><br>
+                    <br>
+                    <input type="submit" style="background-color:rgb(87, 207, 72) ; width: 100px; height: 30px;">
+
+                    
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
