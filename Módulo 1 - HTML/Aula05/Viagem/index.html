@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Viagens</title>
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.15/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.15/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.15/dist/js/uikit-icons.min.js"></script>
+
+    <style>
+        body{
+            width: 1200px;
+            margin: auto;
+        }
+        button{
+            width: 120px;
+            margin-left: 420px;
+            height: 30px;
+            border-radius: 15px;
+            border: 1px solid black;
+            box-shadow: 1px 1px 15px black;
+            padding: 1px;
+            transition: .2s;
+            margin-top: 150px;
+        }
+        button:hover{
+            width: 130px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="uk-position-relative" style="background-color: black; height: 80px;">
+            <img src="https://www.tech4me.com.br/img/icone_tech4me_branco.png" width="60px" height="80px" alt=""
+                style="margin-top:15px; margin-left:60px">
+            <div class="uk-position-top">
+                <nav class="uk-navbar-container uk-navbar-transparent " uk-navbar>
+                    <div class="uk-navbar-right" style="padding-right:60px ;">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Inicio</a></li>
+                            <li><a href="#">Reservas</a></li>
+                            <li><a href="#">Vôos</a></li>
+                            <li><a href="#">Ajuda</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+      <div style="height:150px;background-color:rgb(255, 255, 255);padding-top:30px">
+        <h1 style="text-align: center;">Tech Viagens</h1>
+        <h5 style="text-align: center; margin-top: -20px;">A melhor companhia para viagens seguras!</h5>
+      </div>
+    </header>
+
+    <main>
+        <div>
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ab/40/3a/cataratas-do-iguacu.jpg?w=1200&h=-1&s=1" alt="" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Cataratas do Iguaçu - Foz do Iguaçu - Brasil</h3>
+                        <p>As Cataratas do Iguaçu são mundialmente reconhecidas pela sua beleza e receberam em 2019 mais de 2 milhões de visitantes. E, é o maior destaque entre os pontos turísticos de Foz do Iguaçu.</p>
+                        <button>Saiba mais...</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="https://www.dicasdeviagem.com/wp-content/uploads/2019/05/obelisco-buenos-aires.jpg.webp" alt="" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Buenos Aires  - Argentina</h3>
+                        <p>Pontos turisticos em Buenos Aires é que o não falta. Tem para todos os gostos e bolsos e muitos deles gratuitos. A variedade é enorme, desde uma boa gastronomia, história, cultura, música, vida noturna, natureza e muito mais.</p>
+                        <button>Saiba mais...</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="https://www.essemundoenosso.com.br/wp-content/uploads/2015/11/lugares-da-america-do-sul-atacama.jpg" alt="" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Deserto do Atacama - Chile</h3>
+                        <p>LLocalizado ao norte do Chile, o Deserto do Atacama é o mais alto e mais árido do mundo. A principal cidade da região é San Pedro de Atacama, onde visitantes montam base para conhecer o Atacama.</p>
+                        <button>Saiba mais...</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+   
+
+</body>
+</html>
