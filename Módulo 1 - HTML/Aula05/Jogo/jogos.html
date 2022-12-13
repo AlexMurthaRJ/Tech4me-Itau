@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noSteam</title>
+
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.15/dist/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.15/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.15/dist/js/uikit-icons.min.js"></script>
+
+    <style>
+        a, h4{
+            color: white;
+        }
+        body{
+            background-color: #0E141B;
+        }
+        footer{
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <header>
+        <div class="uk-position-relative" style="background-color: #171a21; height: 80px;">
+            <div class="uk-position-top">
+                <nav class="uk-navbar-container uk-navbar-transparent " uk-navbar>
+                    <div class="uk-navbar-left" style=" width: 1200px; margin: auto;">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="jogos.html">Inicio</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        
+        <div style="width: 1200px;  margin: auto; margin-top: 20px; ">
+            <h4>Em destaque da galera</h4>
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="https://news.xbox.com/pt-br/wp-content/uploads/sites/8/2022/01/PUBG_NewKeyArt2022.jpg" alt="PUBG" uk-cover>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">1° PUBG</h3>
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://cdn2.unrealengine.com/ea-sports-fifa-23-is-coming-to-the-epic-games-store-1920x1080-398e19351a82.jpg" alt="FIFA23" uk-cover>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">2° Fifa 2023</h3>
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://www.centralxbox.com.br/wp-content/uploads/2022/04/Forza-Horizon-5-Series-7.jpeg" alt="FORZA HORIZON 5" uk-cover>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h3 class="uk-margin-remove">3° Forza Horizon 5</h3>
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                </ul>
+            
+                <div class="uk-light">
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+            
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <section style="width: 1200px; margin: auto; text-align: center;">
+        <h4>Jogos escolhidos por imersão em horas jogadas</h4>
+        <div style="width: 200px; margin: auto; color: white;">
+            <ol>
+                <li><a href="pubg.html">PUBG</a></li>
+                <li><a href="fifa23.html">FIFA 2023</a></li>
+                <li><a href="forza5.html">Forza Horizon 5</a></li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
