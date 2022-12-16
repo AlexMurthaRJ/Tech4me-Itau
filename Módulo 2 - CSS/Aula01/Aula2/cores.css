@@ -1,0 +1,33 @@
+table{
+    width: 900px;
+    margin: auto;
+}
+
+tr,td{
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.vermelha{
+    background-color: red;
+}
+.violeta{
+    background-color: violet;
+}
+.azul-escuro{
+    background-color: rgb(1, 1, 92);
+}
+.azul{
+    background-color: blue;
+}
+.verde{
+    background-color: green;
+}
+.amarela{
+    background-color: yellow;
+}
+.laranja{
+    background-color: orangered;
+}
