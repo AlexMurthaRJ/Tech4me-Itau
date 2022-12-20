@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanche do Bom</title>
+
+    <style>
+        .dark-mode{
+            background-color: #2e2e2e;
+            color: rgb(138, 180, 243);
+        }
+        #div1 {
+            display: flex;
+        }
+
+        #div2 {
+            display: flex;
+            width: 1200px;
+            height: 45px;
+            border: 1px solid rgb(194, 194, 194);
+            border-radius: 5px;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+        
+
+        .alinhamentocab {
+            padding: 5px;
+        }
+
+        #input1 {
+            width: 400px;
+            height: 35px;
+            border: none;
+        }
+
+        #div3 {
+            display: flex;
+            width: 600px;
+        }
+
+        section {
+            border: 1px solid rgb(231, 231, 231);
+            width: 600px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body class="">
+
+    <header>
+        <div id="div1">
+            <img src="https://delivery.burgerking.com.br/_next/image?url=https%3A%2F%2Fstatic-images.ifood.com.br%2Fimage%2Fupload%2Ft_low%2Flogosgde%2F30d6d340-8bf3-428f-b1f9-38fbb1f09857%2F202212131747_mpGx_l.jpg&w=1920&q=75"
+                width="45px" alt="">
+            <div id="div2">
+                <div class="alinhamentocab"><svg viewBox="0 0 32 32" fill="none" width="16px" height="16px"
+                        aria-label="Search">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.00001 13.3333C4.00001 8.18798 8.18801 3.99998 13.3333 3.99998C18.4787 3.99998 22.6667 8.18798 22.6667 13.3333C22.6667 18.4786 18.4787 22.6666 13.3333 22.6666C8.18801 22.6666 4.00001 18.4786 4.00001 13.3333ZM29.3333 29.3333C29.854 28.8127 29.854 27.9686 29.3333 27.448L22.7 20.8146C24.344 18.7613 25.3333 16.1626 25.3333 13.3333C25.3333 6.71598 19.9507 1.33331 13.3333 1.33331C6.71601 1.33331 1.33334 6.71598 1.33334 13.3333C1.33334 19.9506 6.71601 25.3333 13.3333 25.3333C16.1627 25.3333 18.7613 24.344 20.8147 22.7L27.448 29.3333C27.9686 29.8539 28.8127 29.8539 29.3333 29.3333Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+                <div class="alinhamentocab"><input type="text" name="" id="input1" placeholder="Busque por itens"></div>
+            </div>
+            <div id="div1">
+                <label for="change_theme">
+                    <input type="checkbox" name="change_theme" id="change_theme"> Dark Mode
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>
+        <h1>Fenda do BK</h1>
+        <section>
+            <h4>Combo Fenda do BK</h4>
+            <div id="div3">
+                <div>
+                    <p>Chegou o Combo Fenda do Bk pra você alimentar o Bob Esponja que existe em você! Experimente agora
+                        o
+                        Burger do Bk, a Batata do Esponja e uma bebida. (Não acompanha brinquedo) <br>
+                    <p>A partir de R$41,90</p>
+                    </p>
+                </div>
+                <div style="padding-left:20px ;"> <img
+                        src="https://static-images.ifood.com.br/image/upload/t_thumbnail,q_100/pratos/6e73dce2-a17f-4aef-9035-1409cea198fe/202210051331_528Y_i.jpg"
+                        alt=""></div>
+            </div>
+
+            <script>
+                const change_theme = document.getElementById('change_theme');
+          
+                change_theme.addEventListener('change', (e) => {
+                    document.body.classList.toggle('dark-mode', e.target.checked)
+                })
+              </script>
+
+        </section>
+
+        <br>
+
+        <section>
+            <h4>Burger do BK</h4>
+            <div id="div3">
+                <div>
+                    <p>O Burger do Bk, do Combo Fenda do Bk, vem com carne alta e suculenta, molho rosa sabor defumado,
+                        queijo fatiado sabor cheddar, alface, tomate e pepino em um pão com gergelim. <br>
+                    <p>A partir de R$26,90</p>
+                    </p>
+                </div>
+                <div style="padding-left:20px ;"> <img
+                        src="https://static-images.ifood.com.br/image/upload/t_thumbnail,q_100/pratos/6e73dce2-a17f-4aef-9035-1409cea198fe/202210040959_0372_i.jpg"
+                        alt=""></div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
