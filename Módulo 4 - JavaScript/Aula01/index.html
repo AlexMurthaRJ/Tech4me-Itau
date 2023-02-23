@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 JS</title>
+
+    <style>
+        .container{
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .quadrado{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+            border: 1px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container"></div>
+
+    <script>
+        function criarquadrado(){
+            const quadrado = document.createElement("div");
+        quadrado.className = "quadrado";
+
+        const lista = document.getElementsByClassName("container");
+        lista[0].appendChild(quadrado);
+        }
+
+function criarquadrados(){
+    for (var i = 0; i <10000; i++) criarquadrado();
+}
+
+const botao = document.createElement("button");
+botao.onclick = criarquadrados;
+botao.textContent = "Criar quadrado";
+
+document.body.appendChild(botao);
+        
+    </script>
+</body>
+</html>
