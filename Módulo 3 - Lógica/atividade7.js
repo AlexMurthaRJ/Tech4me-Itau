@@ -1,10 +1,10 @@
 const prompt = require("prompt-sync")();
 
-var nome = "";
+var nome = [];
 
 while (nomeDigito != "") {
     var nomeDigito = prompt("Qual o nome do aluno? ")
-    nome = nome + ", " + nomeDigito
+    nome.push(nomeDigito);
 }
 
 

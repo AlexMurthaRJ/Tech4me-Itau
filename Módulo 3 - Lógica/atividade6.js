@@ -1,15 +1,14 @@
 const prompt = require("prompt-sync")();
 
-var total_venda = prompt("Digite o valor da venda: ");
-var troco = prompt("Digite o valor recebido: ");
+function ibovespa(nick, valor_acao, qtd_acoes){
+    console.log("Ações de", nick);
+    return valor_acao * qtd_acoes;
+}
 
-var arredondado_venda = Math.round(total_venda);
-valorfinal_venda = parseFloat(arredondado_venda).toFixed(2);
-
-var arredondado_troco = Math.round(troco);
-valorfinal_troco = parseFloat(arredondado_troco).toFixed(2);
+var gasto = ibovespa("PETR4", 26.30, 200);
+console.log("Você pagará", gasto, "para sua corretora");
 
 
-console.log("O valor total é: R$", valorfinal_venda);
-console.log("O valor recebido foi de R$", valorfinal_troco);
 
+
+// Enunciado identico a atividade 5

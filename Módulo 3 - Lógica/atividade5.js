@@ -1,5 +1,14 @@
 const prompt = require("prompt-sync")();
 
-var preco = prompt("Qual o preço da gasolina?");
-var arredondado = parseFloat(preco).toFixed(3);
-console.log("O preço da gasolina é R$", arredondado)
+function ibovespa(nick, valor_acao, qtd_acoes){
+    console.log("Ações de", nick);
+    return valor_acao * qtd_acoes;
+}
+
+var gasto = ibovespa("PETR4", 26.30, 200);
+console.log("Você pagará", gasto, "para sua corretora");
+
+
+
+
+// Enunciado identico a atividade 6

@@ -1,0 +1,8 @@
+POST https://8711-138-185-96-36.ngrok.io/carros
+Content-Type: application/json
+
+{"aluno": "ZÃ©pa", "montadora": "Fiat", "modelo": "FastBack"}
+
+###
+GET https://8711-138-185-96-36.ngrok.io/carros/9
+Content-Type: application/json
